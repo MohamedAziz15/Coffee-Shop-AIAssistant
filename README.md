@@ -50,28 +50,29 @@ The agent is limited to this menu:
    cd drive-thru-ai-agent
    
 Create a virtual environment & install dependencies
-
+```bash
 python -m venv venv
 source venv/bin/activate   # Linux / Mac
 venv\Scripts\activate      # Windows
 
 pip install -r requirements.txt
-
+```
 
 Set up your .env file with API keys:
-
+```
 DEEPGRAM_API_KEY=your_key_here
 GROQ_API_KEY=your_key_here
 CARTESIA_API_KEY=your_key_here
 LIVEKIT_API_KEY=your_key_here
 LIVEKIT_API_SECRET=your_secret_here
+```
 
 ▶️ Running the Agent
 
 Run the application with:
-
-python main.py
-
+```
+python VoiceAgent.py
+```
 
 This will start the LiveKit Agent worker. The agent will:
 
