@@ -33,10 +33,15 @@ The agent is limited to this menu:
 - 💧 Water – $1  
 
 ---
-## Project documentation
+
+
+## 📂 Project Structure  
 ├── main.py # Core agent code (entrypoint)
+
 ├── .env # Environment variables (API keys for Deepgram, Groq, Cartesia, etc.)
+
 ├── requirements.txt
+
 └── README.md # Project documentation
 
 
@@ -100,7 +105,4 @@ This project is licensed under the MIT License – feel free to use and modify f
 
 
 
-
-
-## 📂 Project Structure  
 
