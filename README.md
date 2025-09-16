@@ -33,7 +33,7 @@ The agent is limited to this menu:
 - 💧 Water – $1  
 
 ---
-
+## Project documentation
 ├── main.py # Core agent code (entrypoint)
 ├── .env # Environment variables (API keys for Deepgram, Groq, Cartesia, etc.)
 ├── requirements.txt
