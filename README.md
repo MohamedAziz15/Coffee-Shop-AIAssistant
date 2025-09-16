@@ -1,68 +1,54 @@
-# Coffee-Shop-AIAssistant
+# Drive-Thru AI Agent 🎙️🍵  
 
-## Drive-Thru AI Agent 🎙️🍵
+This repository contains an **AI-powered Drive-Thru Order Taker Agent** built using [LiveKit Agents](https://docs.livekit.io/agents/).  
+The agent uses **speech-to-text (STT)**, **large language models (LLMs)**, **text-to-speech (TTS)**, and **turn detection** to simulate a real drive-thru interaction where customers can order drinks from a menu.  
 
-This repository contains an AI-powered Drive-Thru Order Taker Agent built using LiveKit Agents
-.
-The agent uses speech-to-text (STT), large language models (LLMs), text-to-speech (TTS), and turn detection to simulate a real drive-thru interaction where customers can order drinks from a menu.
+The system is designed to:  
+- Greet customers.  
+- Take and confirm their orders.  
+- Redirect unrelated conversations back to the menu.  
+- Provide a natural conversational ordering experience.  
 
-The system is designed to:
+---
 
-Greet customers.
+## 🛠️ Features  
 
-Take and confirm their orders.
+- **STT (Speech-to-Text)**: Uses [Deepgram Nova-3](https://deepgram.com/) for multilingual transcription.  
+- **LLM (Conversation Engine)**: Powered by [Groq LLaMA-3 8B](https://groq.com/) (can switch to OpenAI GPT models).  
+- **TTS (Text-to-Speech)**: Uses [Cartesia Sonic-2](https://cartesia.ai/) with a custom voice.  
+- **VAD (Voice Activity Detection)**: Provided by [Silero](https://github.com/snakers4/silero-vad).  
+- **Turn Detection**: Handles multilingual conversations smoothly.  
+- **Noise Cancellation**: Enhanced noise cancellation via LiveKit BVC.  
 
-Redirect unrelated conversations back to the menu.
+---
 
-Provide a natural conversational ordering experience.
+## 📋 Menu  
 
-🛠️ Features
+The agent is limited to this menu:  
 
-STT (Speech-to-Text): Uses Deepgram Nova-3
- for multilingual transcription.
+- ☕ Coffee – $3  
+- 🥛 Latte – $4  
+- 🇫🇷 French Coffee – $3  
+- 🍵 Tea – $2  
+- 💧 Water – $1  
 
-LLM (Conversation Engine): Powered by Groq LLaMA-3 8B
- (can switch to OpenAI GPT models).
+---
 
-TTS (Text-to-Speech): Uses Cartesia Sonic-2
- with a custom voice.
-
-VAD (Voice Activity Detection): Provided by Silero
-.
-
-Turn Detection: Handles multilingual conversations smoothly.
-
-Noise Cancellation: Enhanced noise cancellation via LiveKit BVC.
-
-📋 Menu
-
-The agent is limited to this menu:
-
-☕ Coffee – $3
-
-🥛 Latte – $4
-
-🇫🇷 French Coffee – $3
-
-🍵 Tea – $2
-
-💧 Water – $1
-
-📂 Project Structure
-.
-├── main.py        # Core agent code (entrypoint)
-├── .env           # Environment variables (API keys for Deepgram, Groq, Cartesia, etc.)
+├── main.py # Core agent code (entrypoint)
+├── .env # Environment variables (API keys for Deepgram, Groq, Cartesia, etc.)
 ├── requirements.txt
-└── README.md      # Project documentation
-
-⚙️ Setup & Installation
-
-Clone the repo
-
-git clone https://github.com/yourusername/drive-thru-ai-agent.git
-cd drive-thru-ai-agent
+└── README.md # Project documentation
 
 
+---
+
+## ⚙️ Setup & Installation  
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/yourusername/drive-thru-ai-agent.git
+   cd drive-thru-ai-agent
+   
 Create a virtual environment & install dependencies
 
 python -m venv venv
@@ -108,3 +94,12 @@ Modify the menu & prompt inside Assistant.Drive_thru_prompt.
 📜 License
 
 This project is licensed under the MIT License – feel free to use and modify for your needs.
+
+
+
+
+
+
+
+## 📂 Project Structure  
+
